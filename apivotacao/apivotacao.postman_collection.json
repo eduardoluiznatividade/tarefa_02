@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "f613cf6c-2467-4e41-9245-1226af61fffd",
+		"name": "apivotacao",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "eleicoes-listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/votacao/eleicoes/listar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"votacao",
+						"eleicoes",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eleitores-listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/votacao/eleitores/listar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"votacao",
+						"eleitores",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eleicoes-incluir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descricao\": \"Eleicao teste 22\"\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/votacao/eleicoes/incluir",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"votacao",
+						"eleicoes",
+						"incluir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eleitores-incluir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\":\"002\",\r\n\t\"nome\":\"Luiz\",\r\n\t\"email\":\"luiz@mail.com\",\r\n\t\"telefone\":\"444-4444\"\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/votacao/eleitores/incluir",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"votacao",
+						"eleitores",
+						"incluir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eleicao-excluir",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/usuario/:id/excluir",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuario",
+						":id",
+						"excluir"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eleitor-excluir",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/votacao/eleitores/:id/excluir",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"votacao",
+						"eleitores",
+						":id",
+						"excluir"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "candidatos-listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/votacao/candidatos/listar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"votacao",
+						"candidatos",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "candidatos-incluir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numero\": \"22\",\r\n    \"nome\" : \"Bolsonaro\"\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/votacao/candidatos/incluir",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"votacao",
+						"candidatos",
+						"incluir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "candidatos-excluir",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/votacao/candidatos/:id/excluir",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"votacao",
+						"candidatos",
+						":id",
+						"excluir"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "votos-listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/votacao/votos/listar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"votacao",
+						"votos",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "votos-incluir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numero\": \"22\",\r\n    \"nome\" : \"Bolsonaro\"\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/votacao/candidatos/incluir",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"votacao",
+						"candidatos",
+						"incluir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "votos-excluir",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/votacao/candidatos/:id/excluir",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"votacao",
+						"candidatos",
+						":id",
+						"excluir"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
